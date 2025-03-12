@@ -1,7 +1,7 @@
 import sys
 from logger.logger import app_logger
 from exceptions.exceptions import AppException
-from config import CVS_DIR
+from config import Config
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
@@ -12,7 +12,7 @@ from langchain_community.document_loaders import HuggingFaceDatasetLoader
 from langchain_community.document_loaders import PyPDFDirectoryLoader
 
 
-def docs_loader_processor(path=CVS_DIR):
+def docs_loader_processor(path=Config.CVS_DIR):
     """
     Loads PDFs, extracts text, and splits text into chunks.
 
