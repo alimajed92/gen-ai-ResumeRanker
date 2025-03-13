@@ -21,6 +21,7 @@ class Config:
     @classmethod
     def validate(cls):
         """Ensure that required settings are available."""
+        app_logger.info("Validating Configuration...")
         try:
             if cls.OLLAMA_API is None:
                 raise AppException("OLLAMA_API is not set in environment variables")
@@ -35,12 +36,18 @@ class Config:
     @classmethod
     def display(cls):
         """Display configuration for debugging purposes."""
-        app_logger.info(f"Base Directory: {cls.BASE_DIR}")
-        app_logger.info(f"Ollama API: {cls.OLLAMA_API}")
-        app_logger.info(f"Model Name: {cls.MODEL_NAME}")
-        app_logger.info(f"CVS Directory: {cls.CVS_DIR}")
+        # Define ANSI color codes
+        BLUE = "\033[94m"  # Blue for labels
+        YELLOW = "\033[93m"  # Yellow for variable values
+        RESET = "\033[0m"  # Reset color to default
+        app_logger.info("Configuration Details:")
+        app_logger.info(f"{YELLOW}Base Directory:{RESET} {BLUE}{cls.BASE_DIR}{RESET}")
+        app_logger.info(f"{YELLOW}Ollama API:{RESET} {BLUE}{cls.OLLAMA_API}{RESET}")
+        app_logger.info(f"{YELLOW}Model Name:{RESET} {BLUE}{cls.MODEL_NAME}{RESET}")
+        app_logger.info(f"{YELLOW}CVS Directory:{RESET} {BLUE}{cls.CVS_DIR}{RESET}")
 
 
 if __name__ == "__main__":
-    Config.validate()
-    Config.display()
+    # Config.validate()
+    # Config.display()
+    pass

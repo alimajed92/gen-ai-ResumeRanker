@@ -43,6 +43,6 @@ def ollama_langchain_api(
 
 
 if __name__ == "main":
-    llm = ollama_langchain_api()
-    print(llm.invoke("Hello, World!"))
-    # pass
+    # llm = ollama_langchain_api()
+    # print(llm.invoke("Hello, World!"))
+    pass
