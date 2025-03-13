@@ -17,19 +17,18 @@ ResumeRanker is an LLM-powered application that ranks resumes based on a given j
     cd ResumeRanker
     ```
 
-2. Create and activate a virtual environment:
+2. Run the setup script:
     ```sh
-    python -m venv env
-    source env/bin/activate  # On Windows use `env\Scripts\activate`
+    python setup.py
     ```
 
-3. Install the required dependencies:
-    ```sh
-    pip install -r requirements.txt
-    ```
+    This script will:
+    - Create a virtual environment.
+    - Install the required dependencies.
+    - Provide instructions to activate the virtual environment.
+    - Ask if you want to run the application now (Y/N).
 
-4. Set up environment variables:
-    - Copy `env.example` to `.env` and fill in the required values.
+3. Change the [env.example](http://_vscodecontentref_/2) to [.env](http://_vscodecontentref_/3) and fill in the environment variables.
 
 ## Usage
 
@@ -45,15 +44,15 @@ ResumeRanker is an LLM-powered application that ranks resumes based on a given j
 
 ## Configuration
 
-The application configuration is managed in `config.py`. You can set environment variables in the `.env` file to customize the application settings.
+The application configuration is managed in [config.py](http://_vscodecontentref_/0). You can set environment variables in the [.env](http://_vscodecontentref_/1) file to customize the application settings.
 
 ## Logging
 
-Logs are stored in the `logs/` directory. The logging configuration is set up in `logger/logger.py`.
+Logs are stored in the [logs](http://_vscodecontentref_/2) directory. The logging configuration is set up in [logger.py](http://_vscodecontentref_/3).
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License. See the LICENSE file for details.
 
 ## Contributing
 
