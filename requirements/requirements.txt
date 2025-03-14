@@ -1,6 +1,13 @@
 # Base dependencies
-pandas==2.2.3
+#Langchain
 langchain==0.3.18
+langchain-community==0.3.17
+langchain-core==0.3.34
+langchain-huggingface==0.1.2
+langchain-ollama==0.2.3
+langchain-text-splitters==0.3.6
+#others
+pandas==2.2.3
 faiss-cpu==1.10.0
 streamlit==1.43.2
 PyPDF==5.3.0
