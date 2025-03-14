@@ -1,0 +1,17 @@
+# Ignore the virtual environment directory
+venv/
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+# Ignore logs
+logs/
+*.log
+# Ignore other unnecessary files
+.DS_Store
+.git
+.gitignore
+.vscode
+# Ignore docs folder
+docs/

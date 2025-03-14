@@ -9,10 +9,14 @@ def create_virtualenv():
 
 
 def install_requirements():
-    """Install the required dependencies."""
-    subprocess.check_call(
-        [os.path.join("env", "Scripts", "pip"), "install", "-r", "requirements.txt"]
-    )
+    """Install the required dependencies from all requirements files in the requirements folder."""
+    requirements_folder = "requirements"
+    for filename in os.listdir(requirements_folder):
+        if filename.endswith(".txt"):
+            filepath = os.path.join(requirements_folder, filename)
+            subprocess.check_call(
+                [os.path.join("env", "Scripts", "pip"), "install", "-r", filepath]
+            )
 
 
 def activate_virtualenv():
