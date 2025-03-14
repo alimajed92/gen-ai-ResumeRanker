@@ -29,6 +29,16 @@ ResumeRanker is an LLM-powered application that ranks resumes based on a given j
     - Ask if you want to run the application now (Y/N).
 
 3. Change the [env.example](http://_vscodecontentref_/2) to [.env](http://_vscodecontentref_/3) and fill in the environment variables.
+## Usage
+
+1. Run the application:
+    ```sh
+    python run.py
+    ```
+
+2. Open your web browser and go to `http://localhost:8501` to access the Streamlit app.
+
+3. Upload resumes in PDF format and provide a job description to rank the candidates.
 
 ## Docker Setup
 
@@ -45,18 +55,6 @@ To build and run the Docker container for ResumeRanker, follow these steps:
     ```
 
 3. Open your web browser and go to `http://localhost:8501` to access the Streamlit app.
-
-## Usage
-
-1. Run the application:
-    ```sh
-    python run.py
-    ```
-
-2. Open your web browser and go to `http://localhost:8501` to access the Streamlit app.
-
-3. Upload resumes in PDF format and provide a job description to rank the candidates.
-
 
 ## Configuration
 
