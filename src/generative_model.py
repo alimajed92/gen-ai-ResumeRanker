@@ -63,7 +63,7 @@ def evaluate_cvs_n(job_description: str, cvs: str, llm):
 
     try:
         # Call the LLM with the formatted prompt
-        response = llm.invoke(_input)  # If using OpenAI API, change to `llm(_input)`
+        response = llm.invoke(_input)
 
         # Log the response
         app_logger.info(f"LLM Response Received:\n{response}")
