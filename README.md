@@ -1,6 +1,7 @@
 # ResumeRanker
 
 ResumeRanker is an LLM-powered application that ranks resumes based on a given job description. It leverages LangChain and FAISS for document processing and similarity search, and uses a language model to evaluate and rank candidates.
+For additional details about the workflow, please refer to the [Documentation](https://github.com/alimajed92/gen-ai-ResumeRanker/blob/master/docs/documentation.md)
 
 ## Features
 
@@ -28,7 +29,7 @@ ResumeRanker is an LLM-powered application that ranks resumes based on a given j
     - Provide instructions to activate the virtual environment.
     - Ask if you want to run the application now (Y/N).
 
-3. Change the [env.example](http://_vscodecontentref_/2) to [.env](http://_vscodecontentref_/3) and fill in the environment variables.
+3. Change the `env.example` to  `.env` and fill in the environment variables.
 ## Usage
 
 1. Run the application:
