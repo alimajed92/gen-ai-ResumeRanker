@@ -14,12 +14,12 @@ from src.sentence_vector_generator import (
 import asyncio
 import sys
 
-# Fix for Windows event loop issue
+#
 if sys.platform == "win32":
     asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
 cfg.Config.validate()
 cfg.Config.display()
-
+#
 vec_db = load_faiss_db()
 retrieved_docs = vec_db.similarity_search("Python Developer with NLP experience", k=22)
 app_llm = ollama_langchain_api()

@@ -59,11 +59,11 @@ To build and run the Docker container for ResumeRanker, follow these steps:
 
 ## Configuration
 
-The application configuration is managed in [config.py](http://_vscodecontentref_/0). You can set environment variables in the [.env](http://_vscodecontentref_/1) file to customize the application settings.
+The application configuration is managed in `config.py`. You can set environment variables in the `.env` file to customize the application settings.
 
 ## Logging
 
-Logs are stored in the [logs](http://_vscodecontentref_/2) directory. The logging configuration is set up in [logger.py](http://_vscodecontentref_/3).
+Logs are stored in the `logs` directory. The logging configuration is set up in `logger.py`.
 
 ## License
 
