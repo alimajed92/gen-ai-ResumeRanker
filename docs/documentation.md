@@ -3,6 +3,8 @@
 ## Overview
 
 ResumeRanker is an LLM-powered application designed to rank resumes based on a given job description. It leverages various tools and libraries to process, evaluate, and rank resumes effectively.
+## Problem Statement
+Recruiters often spend significant time manually reviewing resumes to match candidates with job descriptions. This process is inefficient, prone to bias, and can lead to overlooking qualified candidates due to inconsistent evaluation methods.
 ## ResumeRanker Workflow
 ![ResumeRanker Workflow](ResumeRanker.png)
 ## Tools and Libraries
