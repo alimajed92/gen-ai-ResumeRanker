@@ -45,7 +45,6 @@ The application uses a pre-trained language model to evaluate and rank the resum
 The ranked resumes are displayed on the web interface, allowing users to view and analyze the results.
 
 ## How It Works
-
 1. **Upload Resumes**: Users upload resumes in PDF format through the Streamlit web interface.
 2. **Extract Text**: The application uses PyPDF to extract text from the uploaded resumes.
 3. **Process Text**: The extracted text is processed using LangChain for document processing and similarity search.
@@ -54,6 +53,15 @@ The ranked resumes are displayed on the web interface, allowing users to view an
 6. **Evaluate and Rank**: The application uses a pre-trained language model from Hugging Face Transformers to evaluate and rank the resumes based on the job description.
 7. **Display Results**: The ranked resumes are displayed on the Streamlit web interface for users to view and analyze.
 
-## Conclusion
-
-ResumeRanker leverages various powerful tools and libraries to provide an efficient and effective solution for ranking resumes based on job descriptions. It simplifies the process of finding the most relevant candidates for a given job, making it a valuable tool for recruiters and hiring managers.
+## Limitations
+While ResumeRanker provides a helpful foundation for resume evaluation and ranking, it has several limitations that should be considered:
+1. **No Resume Deletion or Management**
+Currently, the system allows only uploading resumes; there is no functionality to delete or manage existing resumes from the database.
+1. **Basic Ranking Criteria**
+The evaluation criteria are based on general language model similarity and may not fully align with the specific expectations of HR professionals. Custom prompts or evaluation methods from real recruiters could improve accuracy.
+1. **Minimal Dashboard Insights**
+The dashboard only displays limited information: file name, match percentage, and a basic explanation. More detailed analytics and filtering options would improve usability.
+1. **PDF-Only Resume Support**
+The application only supports resumes in PDF format. It does not handle other common formats such as DOCX or plain text.
+1. **Possible LLM Hallucinations**
+Since the system relies on large language models for resume evaluation and explanation generation, there is a risk of hallucinations where the model generates inaccurate or misleading information that wasn't present in the original resume or job description.
